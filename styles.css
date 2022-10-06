@@ -29,7 +29,7 @@ form {
 .mainCard {
   width: 40vw;
   border-radius: 25px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.452);
   padding: 25px;
 }
 
@@ -44,7 +44,8 @@ form {
 .inputForm {
   border: none;
   padding: 10px;
-  border: 1px solid #eee;
+  background-color: rgba(255, 255, 255, 0.438);
+  border: 1px solid rgba(238, 238, 238, 0.596);
   outline: none;
   width: 65%;
 }
@@ -109,6 +110,9 @@ form {
   color: #f00;
 }
 
+.subrayado{
+  text-decoration: line-through;
+}
 .deleteConfirmationPop {
   position: relative;
   background-color: rgba(255, 255, 255);
