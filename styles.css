@@ -27,10 +27,16 @@ form {
 }
 
 .mainCard {
-  width: 40vw;
+  width: 70%;
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.452);
   padding: 25px;
+}
+
+@media screen and (min-width: 750px) {
+  .mainCard {
+    max-width: 600px;
+  }
 }
 
 .title {
@@ -47,8 +53,10 @@ form {
   background-color: rgba(255, 255, 255, 0.438);
   border: 1px solid rgba(238, 238, 238, 0.596);
   outline: none;
-  width: 65%;
+  width: 45%;
 }
+
+
 
 .inputForm::placeholder {
   padding: 0px;
@@ -81,7 +89,7 @@ form {
 .card {
   width: 90%;
   padding: 15px;
-  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.16);
+  box-shadow: 2px 4px 4px 4px rgba(71, 71, 71, 0.322);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -128,4 +136,9 @@ form {
 
 .noTasks {
   font-size: 48px;
+}
+
+.date{
+  width: 100%;
+  padding: 15px;
 }
