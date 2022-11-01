@@ -29,7 +29,7 @@ export const displayTasks = () => {
                 const diferencia = dateTask.diff(dateNow);
                 
                 
-                if(diff === 0 && diferencia > 0){
+                if(diff === 0){
                 ul.appendChild(crearTarea(task)); //Agregamos la li a la ul desde localStorage
                 }
             });

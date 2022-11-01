@@ -26,21 +26,19 @@ export const addTask = (evento) => {
             id: uuid.v4()
         }
 
-    //Valida si no esta vacío el el input
+    //Valida si esta vacío el input
     if(input === "" || date === ""){
         return; //Detenerse aqui y no hacer nada
-    }
-
-    ul.innerHTML = ''; //Inicia la lista como vacío
-    inputP.value = '' //Seleccionamos el elemento sin .value para poder limpiarlo
-    inputDate.value = '';
-
-    
+    }  
 
     //Para guardar las tareas, tomamos los datos por el nombre de la llave o si es null le agregamos un arreglo vacío
     const taskList = JSON.parse(localStorage.getItem('tasks')) || [];
     taskList.push(taskObj);  //Agregando el objeto al arreglo
     localStorage.setItem('tasks', JSON.stringify(taskList));
+
+    ul.innerHTML = ''; //Inicia la lista como vacío
+    inputP.value = '' ;//Seleccionamos el elemento sin .value para poder limpiarlo
+    inputDate.value = '';
 
     displayTasks(); //Crea y agrega las tareas
 };
